@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0fw-av-rn0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Circle Bar Controller-->
+        <scene sceneID="dCf-T0-b7R">
+            <objects>
+                <tabBarController id="0fw-av-rn0" customClass="SHCircleBarController" customModule="CircleBar" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Q7-nx-6Ds" customClass="SHCircleBar" customModule="CircleBar">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="SHy-NV-35X" kind="relationship" relationship="viewControllers" id="e8t-gy-RYT"/>
+                        <segue destination="XHD-xH-6Lp" kind="relationship" relationship="viewControllers" id="KTo-0G-qdx"/>
+                        <segue destination="Vdm-hY-7D4" kind="relationship" relationship="viewControllers" id="uH5-5L-2LN"/>
+                        <segue destination="cRE-8T-38m" kind="relationship" relationship="viewControllers" id="Pqz-ui-Onu"/>
+                        <segue destination="UCD-9x-SbT" kind="relationship" relationship="viewControllers" id="o5g-09-74g"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8e-nl-8aP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="-347"/>
+        </scene>
+        <!--Sale-->
+        <scene sceneID="5ep-wf-av9">
+            <objects>
+                <viewController id="XHD-xH-6Lp" customClass="SalesViewController" customModule="Sneaker_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="et6-n4-1Cj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="SAy-un-qiJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Sale" image="sale" id="Dzr-78-lLe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHZ-38-CCf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1281" y="394"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="bUe-jf-JIK">
+            <objects>
+                <viewController id="SHy-NV-35X" customClass="NewsViewController" customModule="Sneaker_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aUh-RE-FtY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="11R-tU-fvg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="news" id="xbR-ui-SFK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TY7-HQ-Coj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1986.9565217391305" y="393.75"/>
+        </scene>
+        <!--Hates-->
+        <scene sceneID="lUD-tD-Wvy">
+            <objects>
+                <viewController id="UCD-9x-SbT" customClass="HatesViewController" customModule="Sneaker_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ttr-xE-FJe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PMv-fN-bPx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hates" image="hate" id="B3E-dq-y6e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kby-Sq-7kX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="762" y="394"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="eoV-7D-H7X">
+            <objects>
+                <viewController id="cRE-8T-38m" customClass="FavoritesViewController" customModule="Sneaker_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lhq-sT-biQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="x3u-QL-i2R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorite" id="HAN-5V-ODX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FqG-Fy-yFs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="394"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="fwJ-UN-U2y">
+            <objects>
+                <viewController id="Vdm-hY-7D4" customClass="HomeViewController" customModule="Sneaker_Shop" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Llp-5m-QxL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="cOp-v9-gAN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="rhR-MY-xka"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcZ-TA-Iem" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-601" y="394"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1Q7-nx-6Ds">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="favorite" width="29" height="25"/>
+        <image name="hate" width="29" height="25"/>
+        <image name="home" width="25" height="25"/>
+        <image name="news" width="25" height="25"/>
+        <image name="sale" width="25" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
